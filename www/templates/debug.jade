@@ -1,0 +1,24 @@
+h1 page
+p= _.keys(page)
+
+h2 page.metadata
+p= JSON.stringify(page.metadata)
+
+h2 page.markdown
+p= page.markdown
+
+h2 page.filepath
+p= _.keys(page.filepath)
+
+h3 page.filepath.relative
+p= page.filepath.relative
+
+h3 page.filepath.full
+p= page.filepath.full
+
+
+h1 contents
+p= _.keys(contents)
+
+h1 config
+p= _.keys(locals)
