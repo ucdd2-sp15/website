@@ -5,12 +5,11 @@
         "owner": "Someone",
         "description": "Ramblings of an immor(t)al demigod"
     },
-    "plugins": [
-        "./plugins/paginator.coffee",
+    "plugins": [    
     ],
     "require": {
         "moment": "moment",
-        "_": "lodash",
+        "_": "underscore",
         "typogr": "typogr"
     },
     "jade": {
