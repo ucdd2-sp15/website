@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/website/">
     <meta charset="utf-8">
     <title>UCDD II | Spring 2015</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The main CSS file-->
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!-- CSS file for your custom modifications-->
-    <link href="/css/custom.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="72">
     <!-- ///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
@@ -19,7 +20,7 @@
         <div class="container">
           <div class="navbar-header">
             <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
-            <!-- Logo goes here - replace the image with yours--><a href="/index.html" class="navbar-brand">UCDD II - Spring 2015</a>
+            <!-- Logo goes here - replace the image with yours--><a href="index.html" class="navbar-brand">UCDD II - Spring 2015</a>
           </div>            
           <div class="navbar-collapse collapse nav-right">
             <ul class="nav navbar-nav navbar-right">
@@ -47,24 +48,24 @@
 </ul>
 <h1 id="warmup-html-generator">Warmup: html-generator</h1>
 <p><code>html-gen</code> is a small library providing a set of helper methods for generating HTML structures.</p>
-<pre><code>var html = require(&#39;html&#39;)
-html.generateHeading1(&#39;some heading text&#39;)
+<pre><code class="lang-javascript">    <span class="keyword">var</span> html = <span class="built_in">require</span>(<span class="string">'./lib.js'</span>)
+    html.generateHeading1(<span class="string">'some heading text'</span>)
 
-// --&gt; &lt;h1&gt;some heading text&lt;/h1&gt;
-</code></pre><h2 id="prerequisites">Prerequisites</h2>
+    <span class="comment">// --&gt; &lt;h1&gt;some heading text&lt;/h1&gt;</span>
+</code></pre>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>Have brought a laptop</li>
 <li>Have installed <a href="http://nodejs.org/">Node.js</a></li>
 <li>Have installed a text editor (e.g., <a href="http://www.sublimetext.com/">Sublime Text</a>) for writing code</li>
 <li>Have created a Github account</li>
 </ul>
-<h2 id="github-source">Github Source</h2>
-<p><a href="https://github.com/ucdd2-sp15/ucdd-htmlgen">https://github.com/ucdd2-sp15/ucdd-htmlgen</a></p>
-<ul>
-<li><code>lib.js</code> is where all the library methods are implemented. Currently, only one method has been implemented.</li>
-<li><code>test.js</code> is a test script that invokes each of the library methods and print the return value of each method as a debug message.</li>
-<li><code>README.md</code> has instructions on how to run <code>test.js</code>.</li>
-</ul>
+<h2 id="github-repository">Github Repository</h2>
+<p><a href="https://github.com/ucdd2-sp15/ucdd-htmlgen" class="btn btn-info">https://github.com/ucdd2-sp15/ucdd-htmlgen</a></p>
+<p><code>lib.js</code> is where all the library methods are implemented. Currently, only one method has been implemented.</p>
+<p><code>test.js</code> is a test script that invokes each of the library methods and print the return value of each method as a debug message.</p>
+<p><img src="/website/challenges/0/screen.png" alt="screen"></p>
+<p><code>README.md</code> has instructions on how to run <code>test.js</code>.</p>
 <h2 id="deliverables">Deliverables</h2>
 <ol>
 <li>Have forked <a href="https://github.com/ucdd2-sp15/ucdd-htmlgen">ucdd-htmlgen</a></li>
@@ -93,7 +94,7 @@ html.generateHeading1(&#39;some heading text&#39;)
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <p><a href="https://github.com/ucdd2-sp15/announcements/issues" target="_blank">Announcements</a>|<a href="/syllabus/policy.html" target="_blank">Policy </a>|              <a href="/syllabus/grading.html" target="_blank">Grading</a></p>
+              <p><a href="https://github.com/ucdd2-sp15/announcements/issues" target="_blank">Announcements</a>|<a href="syllabus/policy.html" target="_blank">Policy </a>|              <a href="syllabus/grading.html" target="_blank">Grading</a></p>
             </div>
             <div class="col-md-6 social"></div>
           </div>
@@ -104,21 +105,21 @@ html.generateHeading1(&#39;some heading text&#39;)
     </section>
     <!-- //////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
     <!-- Feel free to remove the scripts you are not going to use-->
-    <script src="/js/jquery-1.8.3.min.js"></script>
-    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="/js/jquery.ui.touch-punch.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.isotope.min.js"></script>
-    <script src="/js/jquery.magnific-popup.js"></script>
-    <script src="/js/jquery.fitvids.min.js"></script>
-    <script src="/assets/twitter/jquery.tweet.js"></script>
-    <script src="/js/bootstrap-select.js"></script>
-    <script src="/js/bootstrap-switch.js"></script>
-    <script src="/js/flatui-checkbox.js"></script>
-    <script src="/js/flatui-radio.js"></script>
-    <script src="/js/jquery.tagsinput.js"></script>
-    <script src="/js/jquery.placeholder.js"></script>
-    <script src="/js/custom.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script src="assets/twitter/jquery.tweet.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/custom.js"></script>
     <!-- //////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
   </body>
 </html>
