@@ -23,23 +23,13 @@ html(lang='en')
             // Logo goes here - replace the image with yours
             a.navbar-brand(href='/index.html')
               //- img.logo-img.img-responsive(src='images/logo.png', alt='Booom! Logo', title='Booom! Logo')
-              | UCCD II - Spring 2015
+              | UCDD II - Spring 2015
           |             
           .navbar-collapse.collapse.nav-right
             ul.nav.navbar-nav.navbar-right
               // Menu items go here
-              li.active.hidden
-                a(href='#home') Home
-              li
-                a(href='#features') Challenges
-              li
-                a(href='#gallery') Hackathons
-              li
-                a(href='#pricing') People
-              |                     
-              li
-                a(href='#testimonials') Teams
-              |                     
+              block menu
+
     // //////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////
 
     
@@ -52,28 +42,13 @@ html(lang='en')
           .row
             .col-md-6
               p
-                a(href='http://colorado.edu', target='_blank') University of Colorado Boulder
-                | .
-            |                     
+                a(href='https://github.com/ucdd2-sp15/announcements/issues', target='_blank') Announcements
+                | |
+                a(href='/syllabus/policy.html', target='_blank') Policy 
+                | |              
+                a(href='/syllabus/grading.html', target='_blank') Grading
             .col-md-6.social
-              ul.bottom-icons
-                li
-                  a.fui-facebook(href='#')
-                |                              
-                li
-                  a.fui-twitter(href='#')
-                |                              
-                li
-                  a.fui-pinterest(href='#')
-                |                              
-                li
-                  a.fui-googleplus(href='#')
-                |                              
-                li
-                  a.fui-dribbble(href='#')
-                |                              
-                li
-                  a.fui-vimeo(href='#')
+              
         // /row
       // /container
     // //////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////

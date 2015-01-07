@@ -1,5 +1,13 @@
 extends layout
 
+block menu
+	li.active.hidden
+		a(href='#home') Home
+	li
+		a(href='#features') Challenges
+	li
+		a(href='#gallery') Hackathons
+
 block content
 
 		// ///////////////////////////////////////// PARALLAX BACKGROUND ////////////////////////////////////////
@@ -49,10 +57,10 @@ block content
 				#gallery-items
 					.col-lg-2.col-md-4.col-xs-6.gallery-item.gallery-popup.all.kittens
 						figure
-							a.zoom(href='http://hackathon/url')
+							a.zoom(href='http://hackathons/url')
 								img.img-responsive(src='images/website.png', alt='gallery-image', title='gallery-image')
 							.item-hover
-								a(href='portfolio-single.html') Class Website
+								a(href='/hackathons/class-website') Class Website
 					
 			// /container
 		// /////////////////////////////////////// end GALLERY SECTION ////////////////////////////////////////
