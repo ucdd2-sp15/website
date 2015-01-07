@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UCDD II | Spring 2015</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The main CSS file-->
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- CSS file for your custom modifications-->
+    <link href="/css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="72">
+    <!-- ///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
+    <!-- /////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="header">
+      <!-- Static navbar-->
+      <div role="navigation" class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
+            <!-- Logo goes here - replace the image with yours--><a href="/index.html" class="navbar-brand">UCDD II - Spring 2015</a>
+          </div>            
+          <div class="navbar-collapse collapse nav-right">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- Menu items go here-->
+              <li><a href="/index.html">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 main-column">
+            <div class="blog-item">
+              <div class="blog-main"><a href="#" class="blog-title">Week 0</a>
+                <p class="lead">Introduction to Learning Challenges</p>
+                <div><h1 id="what-is-a-learning-challenge-">What is a learning challenge?</h1>
+<ul>
+<li><strong>Learn by reverse-engineering</strong>: You will be asked to implement your own <em>reduced</em> version of a particular tool or library.</li>
+<li><strong>Work in groups</strong>: You will most likely to succeed if you work together with your classmates in small teams. </li>
+<li><strong>Visualize by screenshots</strong>: You will take and submit screenshots to visually demonstrate that you’ve learned a topic, thereby fulfilling a learning challenge.</li>
+<li><strong>Flipped classroom</strong>: You will do your learning <strong>not</strong> in the classroom.</li>
+</ul>
+<h1 id="warmup-html-generator">Warmup: html-generator</h1>
+<p><code>html-gen</code> is a small library providing a set of helper methods for generating HTML structures.</p>
+<pre><code>var html = require(&#39;html&#39;)
+html.generateHeading1(&#39;some heading text&#39;)
+
+// --&gt; &lt;h1&gt;some heading text&lt;/h1&gt;
+</code></pre><h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Have brought a laptop</li>
+<li>Have installed <a href="http://nodejs.org/">Node.js</a></li>
+<li>Have installed a text editor (e.g., <a href="http://www.sublimetext.com/">Sublime Text</a>) for writing code</li>
+<li>Have created a Github account</li>
+</ul>
+<h2 id="github-source">Github Source</h2>
+<p><a href="https://github.com/ucdd2-sp15/ucdd-htmlgen">https://github.com/ucdd2-sp15/ucdd-htmlgen</a></p>
+<ul>
+<li><code>lib.js</code> is where all the library methods are implemented. Currently, only one method has been implemented.</li>
+<li><code>test.js</code> is a test script that invokes each of the library methods and print the return value of each method as a debug message.</li>
+<li><code>README.md</code> has instructions on how to run <code>test.js</code>.</li>
+</ul>
+<h2 id="deliverables">Deliverables</h2>
+<ol>
+<li>Have forked <a href="https://github.com/ucdd2-sp15/ucdd-htmlgen">ucdd-htmlgen</a></li>
+<li>Have checked out your own fork locally on your machine to work on</li>
+<li>Have implemented at least <strong>FIVE</strong> of the unimplemented functions in <code>lib.js</code></li>
+<li>Have run <code>test.js</code> and made sure debug outputs are correct</li>
+<li>Have committed your implementation and pushed to your Github account</li>
+<li>Have made a pull request to source repository</li>
+</ol>
+<h2 id="screenshots">Screenshots</h2>
+<p>Take a screenshot to visually document and demonstrate your accomplishment of each deliverable. </p>
+<ul>
+<li><strong>What screenshots to take?</strong> Make your own decision (or exchange ideas with other classmates) on what screenshots make sense.</li>
+<li><strong>How to submit screenshots?</strong> For now, save your screenshots. Next, in today’s hackathon, we will work together to build a website to post your screenshots.</li>
+</ul>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// FOOTER SECTION ////////////////////////////////////////-->
+    <section id="footer">
+      <div class="bottom-menu-inverse">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p><a href="https://github.com/ucdd2-sp15/announcements/issues" target="_blank">Announcements</a>|<a href="/syllabus/policy.html" target="_blank">Policy </a>|              <a href="/syllabus/grading.html" target="_blank">Grading</a></p>
+            </div>
+            <div class="col-md-6 social"></div>
+          </div>
+        </div>
+        <!-- /row-->
+      </div>
+      <!-- /container-->
+    </section>
+    <!-- //////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
+    <!-- Feel free to remove the scripts you are not going to use-->
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.magnific-popup.js"></script>
+    <script src="/js/jquery.fitvids.min.js"></script>
+    <script src="/assets/twitter/jquery.tweet.js"></script>
+    <script src="/js/bootstrap-select.js"></script>
+    <script src="/js/bootstrap-switch.js"></script>
+    <script src="/js/flatui-checkbox.js"></script>
+    <script src="/js/flatui-radio.js"></script>
+    <script src="/js/jquery.tagsinput.js"></script>
+    <script src="/js/jquery.placeholder.js"></script>
+    <script src="/js/custom.js"></script>
+    <!-- //////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
+  </body>
+</html>

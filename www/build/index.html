@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UCDD II | Spring 2015</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The main CSS file-->
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- CSS file for your custom modifications-->
+    <link href="/css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="72">
+    <!-- ///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
+    <!-- /////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="header">
+      <!-- Static navbar-->
+      <div role="navigation" class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
+            <!-- Logo goes here - replace the image with yours--><a href="/index.html" class="navbar-brand">UCDD II - Spring 2015</a>
+          </div>            
+          <div class="navbar-collapse collapse nav-right">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- Menu items go here-->
+              <li class="active hidden"><a href="#home">Home</a></li>
+              <li><a href="#features">Challenges</a></li>
+              <li><a href="#gallery">Hackathons</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////-->
+    <!-- ///////////////////////////////////////// PARALLAX BACKGROUND ////////////////////////////////////////-->
+    <!-- image is set in the CSS as a background image-->
+    <div id="parallax"></div>
+    <!-- /////////////////////////////////////// HERO SECTION ////////////////////////////////////////-->
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 intro">
+            <!--img(src='images/logo.png', alt='Booom! Logo', title='Booom! Logo')                                -->
+            <p class="lead small">CSCI 4830/7000</p>
+            <p class="lead">User-centered Design and Development II</p><a href="#features" class="btn btn-hg btn-primary">Challenges</a><a href="#gallery" class="btn btn-hg btn-inverse inline">Hackathons</a>
+          </div>
+        </div>
+        <!-- /row-->
+      </div>
+      <!-- /container-->
+    </section>
+    <!-- ///////////////////////////////////////////////// end HERO SECTION ////////////////////////////////////////-->
+    <!-- /////////////////////////////////////// FEATURES SECTION ////////////////////////////////////////-->
+    <section id="features">
+      <div class="container">
+        <header>
+          <h1>Learning Challenges            </h1>
+          <p class="lead">How much can you learn in one week?</p>
+        </header>
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <div class="feature-icon"><img src="images/node.png" alt="" title="">
+            </div>
+            <h4>Nodejs</h4>
+            <p>Server-side JavaScript<br><a href="challenges/0" class="label label-default">week 0</a><a href="challenges/1" class="label label-default">week 1</a><a href="challenges/2" class="label label-default">week 2</a></p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="feature-icon"><img src="images/wintersmith.png" alt="" title="">
+            </div>
+            <h4>WintersmithJS</h4>
+            <p>Flexible, minimalistic, static site generator<br><a href="challenges/0" class="label label-default">week 0</a><a href="challenges/1" class="label label-default">week 1</a></p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="feature-icon"><img src="images/jquery.png" alt="" title="">
+            </div>
+            <h4>JQuery</h4>
+            <p>The Write Less, Do More, JavaScript Library<br><a href="challenges/4" class="label label-default">week 4</a></p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="feature-icon"><img src="images/jade.png" alt="" title="">
+            </div>
+            <h4>Jade</h4>
+            <p>Robust, elegant, feature rich template engine for nodejs<br><a href="challenges/5" class="label label-default">week 5</a></p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="feature-icon"><img src="images/angular.png" alt="" title="">
+            </div>
+            <h4>Angularjs</h4>
+            <p>Superheroic JavaScript MVW framework<br><a href="challenges/6" class="label label-default">week 6</a><a href="challenges/7" class="label label-default">week 7</a><a href="challenges/8" class="label label-default">week 8</a><a href="challenges/9" class="label label-default">week 9</a></p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="feature-icon"><img src="images/gulp.png" alt="" title="">
+            </div>
+            <h4>Gulpjs</h4>
+            <p>The streamming build system<br><a href="challenges/10" class="label label-default">week 10</a></p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="feature-icon"><img src="images/phantom.png" alt="" title="">
+            </div>
+            <h4>Phantomjs</h4>
+            <p>Headless website testing<br><a href="challenges/11" class="label label-default">week 11</a></p>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="feature-icon"><img src="images/mocha.png" alt="" title="">
+            </div>
+            <h4>Mocha</h4>
+            <p>Fun, simple, flexible JS test framework<br><a href="challenges/3" class="label label-default">week 3</a><a href="challenges/4" class="label label-default">week 4</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////// HACKATHONS SECTION ////////////////////////////////////////-->
+    <section id="gallery">
+      <div class="container">
+        <header>
+          <h1>Hackathons            </h1>
+          <p class="lead">What can you build in 150 minutes?</p>
+        </header>
+        <!-- ////////// Sortable Gallery Filters //////////-->
+        <div id="gallery-items">
+          <div class="col-lg-2 col-md-4 col-xs-6 gallery-item gallery-popup all kittens">
+            <figure><a href="http://hackathons/url" class="zoom"><img src="images/website.png" alt="gallery-image" title="gallery-image" class="img-responsive"></a>
+              <div class="item-hover"><a href="/hackathons/class-website">Class Website</a></div>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!-- /container-->
+    </section>
+    <!-- /////////////////////////////////////// end GALLERY SECTION ////////////////////////////////////////-->
+    <!-- /////////////////////////////////////// FAQ SECTION ////////////////////////////////////////-->
+    <section id="faq">
+      <div class="container">
+        <header>
+          <h1>F.A.Q.</h1>                
+          <p class="lead">You have a question? Someone else might have had the exact same one. Let&apos;s find out!</p>
+        </header>            
+        <div class="row">
+          <div class="col-md-6">
+            <!-- ////////// Accordion Toggle //////////-->
+            <div id="accordion" class="panel-group">
+              <!-- PANEL 1-->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseabsence" class="accordion-toggle">What if I have to miss a hackathon?</a></h4>
+                </div>
+                <div id="collapseabsence" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p><p>Attending hackathons is a critical part of the course. Each hackathon is worth a percentage of your grade. If you have a valid reason to misee a hackathon, you must inform the teaching staff in advance. Please refer to the <a href="/syllabus/policy.html">course policy</a> page for more details.</p>
+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ////////// end of Accordion Toggle //////////-->
+          <div class="col-md-6">
+            <!-- ////////// Accordion Toggle //////////-->
+            <div id="accordion" class="panel-group">
+              <!-- PANEL 1-->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsegrading" class="accordion-toggle">How will I be graded?</a></h4>
+                </div>
+                <div id="collapsegrading" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p><p>Each time you have accomplished a deliverable for a learning challenege or a in-class hackathon, you earn a certain number of points. Over the semester, you will be racking up points. At the end of the semester, your total point will be mapped to a letter grade. More information about grading can be found on <a href="/syllabus/grading.html">this page</a>.</p>
+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ////////// end of Accordion Toggle //////////-->
+          <div class="col-md-6">
+            <!-- ////////// Accordion Toggle //////////-->
+            <div id="accordion" class="panel-group">
+              <!-- PANEL 1-->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapselocation" class="accordion-toggle">When and where is this week's hackathon?</a></h4>
+                </div>
+                <div id="collapselocation" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p><p>By default, the hackathon is held each Monday from 4pm to 6:30pm. The location is the 2nd floor lounge in the ATLAS building. However, we are plannign to bring several hackathons to off-site locations throughout the semester. It could be in another hacker space on campus, off campus, or at a local company who is sponsoring a hackathon event. It could even be heald outside on a nice day. Please pay attention to the course annoucement and check the web page for the specific hackathon.</p>
+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ////////// end of Accordion Toggle //////////-->
+          <!-- /col-md-6-->
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////// end FAQ SECTION ////////////////////////////////////////-->
+    <!-- //////////////////////////////////////// FOOTER SECTION ////////////////////////////////////////-->
+    <section id="footer">
+      <div class="bottom-menu-inverse">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p><a href="https://github.com/ucdd2-sp15/announcements/issues" target="_blank">Announcements</a>|<a href="/syllabus/policy.html" target="_blank">Policy </a>|              <a href="/syllabus/grading.html" target="_blank">Grading</a></p>
+            </div>
+            <div class="col-md-6 social"></div>
+          </div>
+        </div>
+        <!-- /row-->
+      </div>
+      <!-- /container-->
+    </section>
+    <!-- //////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
+    <!-- Feel free to remove the scripts you are not going to use-->
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.magnific-popup.js"></script>
+    <script src="/js/jquery.fitvids.min.js"></script>
+    <script src="/assets/twitter/jquery.tweet.js"></script>
+    <script src="/js/bootstrap-select.js"></script>
+    <script src="/js/bootstrap-switch.js"></script>
+    <script src="/js/flatui-checkbox.js"></script>
+    <script src="/js/flatui-radio.js"></script>
+    <script src="/js/jquery.tagsinput.js"></script>
+    <script src="/js/jquery.placeholder.js"></script>
+    <script src="/js/custom.js"></script>
+    <!-- //////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
+  </body>
+</html>
