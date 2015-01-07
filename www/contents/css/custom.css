@@ -1,0 +1,49 @@
+/* ===== START YOUR CUSTOMIZATIONS HERE ===== */
+#parallax {
+  height: 672px;
+  width: 100%;
+  position: fixed;
+  background: url('../images/hackathon.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+
+#hackathons {
+  background-color: #ecf0f1;
+}
+
+#features .label {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+
+
+#hero .lead{
+	padding: 5px;
+	color: white;
+	background: rgba(0,0,0,0.4);
+	font-weight: 500;
+}
+
+#hero .small{
+	font-size: 100%;
+}
+
+
+#blog h1,
+h2,
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#blog h1,
+.h1 {
+  font-size: 29px;
+}
+#blog h2,
+.h2 {
+  font-size: 25px;
+}
