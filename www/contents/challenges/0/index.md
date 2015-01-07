@@ -17,11 +17,12 @@ template: challenge.jade
 
 <code>html-gen</code> is a small library providing a set of helper methods for generating HTML structures.
 
-
-	var html = require('html')
+```javascript
+	var html = require('./lib.js')
 	html.generateHeading1('some heading text')
 	
 	// --> <h1>some heading text</h1>
+```
 
 ## Prerequisites
 
@@ -30,13 +31,17 @@ template: challenge.jade
 * Have installed a text editor (e.g., [Sublime Text](http://www.sublimetext.com/)) for writing code
 * Have created a Github account
 
-## Github Source
+## Github Repository
 
-[https://github.com/ucdd2-sp15/ucdd-htmlgen](https://github.com/ucdd2-sp15/ucdd-htmlgen)
+<a href="https://github.com/ucdd2-sp15/ucdd-htmlgen" class="btn btn-info">https://github.com/ucdd2-sp15/ucdd-htmlgen</a>
 
-* <code>lib.js</code> is where all the library methods are implemented. Currently, only one method has been implemented.
-* <code>test.js</code> is a test script that invokes each of the library methods and print the return value of each method as a debug message.
-* <code>README.md</code> has instructions on how to run <code>test.js</code>.
+<code>lib.js</code> is where all the library methods are implemented. Currently, only one method has been implemented.
+
+<code>test.js</code> is a test script that invokes each of the library methods and print the return value of each method as a debug message.
+
+![screen](screen.png)
+
+<code>README.md</code> has instructions on how to run <code>test.js</code>.
 
 ## Deliverables
 
