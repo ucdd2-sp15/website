@@ -1,7 +1,13 @@
 extends layout
 
 block content
-  article.article  	
-    section.content.eleven.columns!= typogr(page.html).typogrify()
-
-
+  section#blog
+    .container
+      .row
+        .col-md-8.main-column
+          .blog-item
+            .blog-main
+              a.blog-title(href='#')= page.title
+              p.lead= page.metadata.lead
+              div!= page.html            
+       

@@ -2,14 +2,88 @@ extends layout
 
 block content
 
-block prepend footer
-  div.nav
-    if prevPage
-      a(href=prevPage.url) « Newer
-    else
-      a(href='/archive.html') « Archives
-    if nextPage
-      a(href=nextPage.url) Next page »
+		// ///////////////////////////////////////// PARALLAX BACKGROUND ////////////////////////////////////////
+		// image is set in the CSS as a background image
+		#parallax
 
+		// /////////////////////////////////////// HERO SECTION ////////////////////////////////////////
+		section#hero
+			.container
+				.row
+					.col-md-6.intro
 
+						//img(src='images/logo.png', alt='Booom! Logo', title='Booom! Logo')                                
+						p.lead.small CSCI 4830/7000
+						p.lead User-centered Design and Development II
+						a.btn.btn-hg.btn-primary(href='#features') Challenges
+						a.btn.btn-hg.btn-inverse.inline(href='#gallery') Hackathons
+				// /row
+			// /container
+		// ///////////////////////////////////////////////// end HERO SECTION ////////////////////////////////////////
+		// /////////////////////////////////////// FEATURES SECTION ////////////////////////////////////////
+		section#features
+			.container
+				header
+					h1 Learning Challenges            
+					p.lead How much can you learn in one week?
+				.row
+					each topic in contents['topics.json'].metadata          
+						.col-md-3.text-center
+							.feature-icon
+								//- img(src='images/icons/key.svg', alt='', title='')
+								img(src='images/' + topic.logo, alt='', title='')        
+							h4= topic.name                   
+							p= topic.description  
+								br
+								each w in topic.weeks                  
+									a.label.label-default(href='challenges/' + w)= 'week ' + w
 
+		// /////////////////////////////////////// HACKATHONS SECTION ////////////////////////////////////////
+		section#gallery
+			.container
+				header
+					h1 Hackathons            
+					p.lead What can you build in 150 minutes?
+				// ////////// Sortable Gallery Filters //////////
+
+				#gallery-items
+					.col-lg-2.col-md-4.col-xs-6.gallery-item.gallery-popup.all.kittens
+						figure
+							a.zoom(href='http://hackathon/url')
+								img.img-responsive(src='images/website.png', alt='gallery-image', title='gallery-image')
+							.item-hover
+								a(href='portfolio-single.html') Class Website
+					
+			// /container
+		// /////////////////////////////////////// end GALLERY SECTION ////////////////////////////////////////
+
+		// /////////////////////////////////////// FAQ SECTION ////////////////////////////////////////
+		section#faq
+			.container
+				header
+					h1 F.A.Q.
+					|                 
+					p.lead
+						| You have a question? Someone else might have had the exact same one. Let&apos;s find out!
+				|             
+				.row
+					each q in contents.faq
+						- var id = q.filepath.relative.match(/faq\/(.*)\.md/)[1]
+						.col-md-6
+							// ////////// Accordion Toggle //////////
+							#accordion.panel-group
+								// PANEL 1
+								.panel.panel-default
+									.panel-heading
+										h4.panel-title
+											a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapse' + id)
+												= q.metadata.title
+
+									div.panel-collapse.collapse(id='collapse' + id)
+										.panel-body
+											p!= q.html
+
+						// ////////// end of Accordion Toggle //////////
+
+					// /col-md-6
+		// /////////////////////////////////////// end FAQ SECTION ////////////////////////////////////////
