@@ -47,7 +47,7 @@ template: challenge.jade
 
 1. Have forked [ucdd-htmlgen](https://github.com/ucdd2-sp15/ucdd-htmlgen)
 2. Have checked out your own fork locally on your machine to work on
-3. Have implemented at least __FIVE__ of the unimplemented functions in <code>lib.js</code>
+3. Have implemented any __TWO__ of the unimplemented functions in <code>lib.js</code>
 4. Have run <code>test.js</code> and made sure debug outputs are correct
 5. Have committed your implementation and pushed to your Github account
 6. Have made a pull request to source repository
