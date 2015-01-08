@@ -55,7 +55,7 @@
 }
 
 #blog img {
-  width: 95%;
+  max-width: 95%;
   border: 1px solid #ccc;
 }
 
