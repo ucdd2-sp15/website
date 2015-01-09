@@ -1,52 +1,57 @@
 ---
 title: Week 1
-lead: Learn NodeJS by building html-gen
+lead: Learn NodeJS via lodash and html-gen
 template: challenge.jade
 ---
 
-Your learning challenge this week is to continue to develop <code>html-gen</code>. By doing so, you will become more familair with Nodejs.
+Your learning challenge this week has two parts. First, for team co-learning, make an initial contribution to the <code>ucdd-lodash</code> library. Second, for individual learning, continue to develop the <code>html-gen</code> library.
 
 # Prerequisites
 
 * Have completed the [introductory learning challenge](../../challenges/0)
 * Have completed the [introductory hackathon](../../hackathon/class-website)
 
-# Github Repository
+# Github Repositories
+
+<code>ucdd-lodash</code>
+
+<a href="https://github.com/ucdd2-sp15/ucdd-lodash" class="btn btn-info">https://github.com/ucdd2-sp15/ucdd-lodash</a>
+
+<code>html-gen</code>
 
 <a href="https://github.com/ucdd2-sp15/ucdd-htmlgen" class="btn btn-info">https://github.com/ucdd2-sp15/ucdd-htmlgen</a>
 
+# Team Learning (50 points)
 
-# Deliverables
+## Milestones
 
-1. Have implemented N functions in <code>lib.js</code> (5 x N points = ? points) 
-2. Have committed my implementation and pushed it to my own Github account (5 points)
-3. Have made a pull request to the source repository (5 points)
+1. Have each team member implemented ONE function in <code>lib/ucdd-lodash.js</code> (40 points)
+2. Have made a single pull request to the class's repository (10 points). 
 
-# Submission
+## Due
+11:59pm, Friday
 
-If you have completed the introductory hackathon, you should have your own personal page on the [People](https://github.com/ucdd2-sp15/people) site. Add this new set of deliverable screenshots to the bottom of the page. Each screenshot should have a heading that goes like "I have ....." so that we know what this screenshot is supposed to be about. Below is a template you can use.
+## Submission
+The team member's contribution should come to the team's fork in the form of pull requests. The team leader's own contribution is made directly to the team's fork. After mering all the pull requests from other team members, the team leader should make a single pull request to the class's repository. The pull request message should list the names of the team members and also the points the team has earned.
 
-```markdown
+## Absence
+People who fail to show up and participate in a team learning session will not earn any point from this part.
 
-# Week 1 
+# Individual Learning (50 points)
 
-I have earned a total of 70/100 points.
+## Milestones
+1. Have implemented N functions in <code>lib.js</code> (10 x N points = ? points, Max: 40 points).
+2. Have committed and pushed my implementation to my own fork (10 points). The final commit message should report the number of points earned.
 
-## I have implemented 12 functions in <code>lib.js</code> (5 x 12 points = 60 points) 
+## Due
+11:59pm, Sunday
 
-![screenshot](screenshot1.png)
+## Submission
 
-## I have committed my implementation and pushed it to my own Github account (5 points)
-
-![screenshot](screenshot2.png)
-
-## I have made a pull request to the source repository (5 points)
-
-![screenshot](screenshot3.png)
-
-```
+You do not need to make a pull request from your fork of <code>html-gen</code>. You just need to make sure you commit your code and push this commit to your own Github fork. We will assume your most recent commit prior to the deadline is your submission.
 
 # Grading
 
-We will adopt a honor system to grade these deliverables. You will calculate and report the points you have earned. The grader of the class will randomly select a subset of the submissions to check to ensure fairness.
+We will use a honor system in which you will self-report the points you believe you have earned. For the team learning part, the team leader reports the points earned in the pull request message. For the individual learning part, you report the points you've earned in the last commit message prior to the deadline.
 
+Each week, the grader for this class will take a random sample of the submissions to check for consistency to ensure fairness and promote honesty.

@@ -21,7 +21,13 @@ The Github repository for this site is
 
 <a href="https://github.com/ucdd2-sp15/people" class="btn btn-info">https://github.com/ucdd2-sp15/people</a>
 
+# Time
+
+1 hour
+
 # Specifications
+
+By the end of the hackathon, we want the website to meet the following specifications:
 
 * Every student in the class should have a page about the student
 * The page should provide basic information about each student
@@ -30,16 +36,18 @@ The Github repository for this site is
 
 # Process
 
+Each week's hackathon will use a two-level fork/pull process similar to the process used in team-based co-learning you have just done. Because this process is new and could be complex to some students who may be using Github for the first time, we will practice one more time here.
+
 ## Team
 
-You will work in a team of four or five. The teaching staff will facilitate teaming. Each team will elect a leader. We recommend that the person who is most experienced with Github's fork/pull-request process should be elected as the leader.
+Continue to work in the same team.
 
 ## Fork
 
 As a class, we will divide-and-conquer to get the site completed and achieve the hackathon's objectives. This divide-and-conquer will proceed in two levels.
 
 
-First, at the level of teams, we will divide a class into several teams. Each team will make only one fork from the source repository. The team leader is responsible for making this fork.
+First, at the level of teams, each team will make only one fork from the source repository. The team leader is responsible for making this fork.
 
 Second, at the level of individuals, each team member will make a personal fork from the team's fork. In effect, each person will be working on his or her own fork of a fork.
 
