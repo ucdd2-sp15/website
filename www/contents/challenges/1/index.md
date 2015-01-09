@@ -9,7 +9,7 @@ Your learning challenge this week has two parts. First, for team co-learning, ma
 # Prerequisites
 
 * Have completed the [introductory learning challenge](../../challenges/0)
-* Have completed the [introductory hackathon](../../hackathon/class-website)
+* Have completed the [introductory hackathon](../../hackathons/class-website)
 
 # Github Repositories
 
