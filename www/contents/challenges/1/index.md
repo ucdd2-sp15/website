@@ -34,7 +34,7 @@ Your learning challenge this week has two parts. First, for team co-learning, ma
 Each team decides on a time and location to meet before the submission deadline.
 
 ## Forking
-1. The team leader should create a fork from [ucdd2-sp15/ucdd-htmlgen](https://github.com/ucdd2-sp15/ucdd-htmlgen).
+1. The team leader should create a fork from [ucdd2-sp15/ucdd-lodash](https://github.com/ucdd2-sp15/ucdd-lodash).
 2. Each team member should create a fork from this team's fork.
 3. Everyone should work on a separate fork to implement the ONE function.
 
@@ -43,7 +43,7 @@ Each team decides on a time and location to meet before the submission deadline.
 11:59pm, Friday
 
 ## Submission
-Individual members should first submit pull requests to the team leader's fork. After mering all the pull requests from other team members, the team leader should make a single pull request to [ucdd2-sp15/ucdd-htmlgen](https://github.com/ucdd2-sp15/ucdd-htmlgen). In the pull request message, the team leader should list the names of the team members and also write down the points the team has earned.
+Individual members should first submit pull requests to the team leader's fork. After mering all the pull requests from other team members, the team leader should make a single pull request to [ucdd2-sp15/ucdd-lodash](https://github.com/ucdd2-sp15/ucdd-lodash). In the pull request message, the team leader should list the names of the team members and also write down the points the team has earned.
 
 ## Absence
 People who fail to show up and participate in a team learning session will not earn any point from this part.
