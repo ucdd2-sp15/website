@@ -26,13 +26,24 @@ Your learning challenge this week has two parts. First, for team co-learning, ma
 ## Milestones
 
 1. Have each team member implemented ONE function in <code>lib/ucdd-lodash.js</code> (40 points)
-2. Have made a single pull request to the class's repository (10 points). 
+2. Have made a single pull request to the class's repository (10 points).
+
+
+## Time and Location
+
+Each team decides on a time and location to meet before the submission deadline.
+
+## Forking
+1. The team leader should create a fork from [ucdd2-sp15/ucdd-htmlgen](https://github.com/ucdd2-sp15/ucdd-htmlgen).
+2. Each team member should create a fork from this team's fork.
+3. Everyone should work on a separate fork to implement the ONE function.
+
 
 ## Due
 11:59pm, Friday
 
 ## Submission
-The team member's contribution should come to the team's fork in the form of pull requests. The team leader's own contribution is made directly to the team's fork. After mering all the pull requests from other team members, the team leader should make a single pull request to the class's repository. The pull request message should list the names of the team members and also the points the team has earned.
+Individual members should first submit pull requests to the team leader's fork. After mering all the pull requests from other team members, the team leader should make a single pull request to [ucdd2-sp15/ucdd-htmlgen](https://github.com/ucdd2-sp15/ucdd-htmlgen). In the pull request message, the team leader should list the names of the team members and also write down the points the team has earned.
 
 ## Absence
 People who fail to show up and participate in a team learning session will not earn any point from this part.
