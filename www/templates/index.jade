@@ -43,8 +43,11 @@ block content
 							h4= topic.name                   
 							p= topic.description  
 								br
-								each w in topic.weeks                  
-									a.label.label-default(href='challenges/' + w)= 'week ' + w
+								if topic.weeks.length > 0
+									each w in topic.weeks                  
+										a.label.label-warning(href='challenges/' + w)= 'week ' + w
+								else
+									p.label.label-defult tbd
 
 		// /////////////////////////////////////// HACKATHONS SECTION ////////////////////////////////////////
 		section#gallery

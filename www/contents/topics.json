@@ -7,35 +7,35 @@
     "name": "WintersmithJS",
     "description": "Flexible, minimalistic, static site generator",
     "logo": "wintersmith.png",
-    "weeks" : [0,1] 
-}, {
-    "name": "JQuery",
-    "description": "The Write Less, Do More, JavaScript Library",
-    "logo": "jquery.png",
-    "weeks" : [4]
+    "weeks" : [0,2] 
 }, {
     "name": "Jade",
     "description": "Robust, elegant, feature rich template engine for nodejs",
     "logo": "jade.png",
-    "weeks" : [5]
+    "weeks" : [2]
+}, {
+    "name": "JQuery",
+    "description": "The Write Less, Do More, JavaScript Library",
+    "logo": "jquery.png",
+    "weeks" : []    
 }, {
     "name": "Angularjs",
     "description": "Superheroic JavaScript MVW framework",
     "logo": "angular.png",
-    "weeks" : [6,7,8,9]
+    "weeks" : []
 }, {
     "name": "Gulpjs",
     "description": "The streamming build system",
     "logo": "gulp.png",
-    "weeks" : [10]
+    "weeks" : []
 }, {
     "name": "Phantomjs",
     "description": "Headless website testing",
     "logo": "phantom.png",
-    "weeks" : [11]
+    "weeks" : []
 }, {
     "name": "Mocha",
     "description": "Fun, simple, flexible JS test framework",
     "logo": "mocha.png",
-    "weeks" : [3,4]
+    "weeks" : []
 }]
