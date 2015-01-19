@@ -37,9 +37,90 @@
         <div class="row">
           <div class="col-md-8 main-column">
             <div class="blog-item">
-              <div class="blog-main"><a href="#" class="blog-title">Week</a>
-                <p class="lead">TBA</p>
-                <div><p>TBA</p>
+              <div class="blog-main"><a href="#" class="blog-title">Week 2</a>
+                <p class="lead">Learn NodeJS and Jade</p>
+                <div><p>Your learning challenge this week has two parts. </p>
+<p>First, for team co-learning, the topic will be <a href="http://jade-lang.com/">Jade</a>, arguably the most popular template engine for Node. You will learn about Jade by building some basic features of our own knockoff called <code>ucdd-jaded</code>. Also, you will try to fix <a href="https://github.com/ucdd2-sp15/people/issues/10">this bug</a> of the <a href="https://github.com/ucdd2-sp15/people">People</a> website. This bug can be traced back to a Jade template file (index.jade).</p>
+<p>Second, for individual learning, continue to develop the <code>ucdd-lodash</code> library to enhance your Javascript knowledge.</p>
+<h1 id="team-learning-50-points-">Team Learning (50 points)</h1>
+<h2 id="github-repository">Github Repository</h2>
+<p><code>ucdd-jaded</code></p>
+<p><a href="https://github.com/ucdd2-sp15/ucdd-jaded" class="btn btn-info">https://github.com/ucdd2-sp15/ucdd-jaded</a></p>
+<p>The skeleton code contains five test cases. Initially, only the first test case is working. Your team needs to work together to get all the test cases working.</p>
+<h2 id="milestones">Milestones</h2>
+<ol>
+<li>Have gotten <code>test2</code> to work (10 point)</li>
+<li>Have gotten <code>test3</code> to work (10 point)</li>
+<li>Have gotten <code>test4</code> to work (10 point)</li>
+<li>Have gotten <code>test5</code> to work (10 point)</li>
+<li>Have discussed and come up with a solution for <a href="https://github.com/ucdd2-sp15/people/issues/10">this bug</a> (10 point)</li>
+</ol>
+<h2 id="due">Due</h2>
+<p>11:59pm, Friday</p>
+<h2 id="time-and-location">Time and Location</h2>
+<p>Each team decides on a time and location to meet before the submission deadline.</p>
+<h2 id="procedure">Procedure</h2>
+<ol>
+<li>The team leader should create a fork from <a href="https://github.com/ucdd2-sp15/ucdd-jaded">ucdd2-sp15/ucdd-jaded</a>.</li>
+<li>Each team member should create a fork from this team’s fork.</li>
+<li>Everyone should work on a separate fork to implement and contribute to at least ONE test case. If your team has more members than there are test cases, some can work on the same test case. The bottom line is that everyone must contribute something.</li>
+</ol>
+<h2 id="submission">Submission</h2>
+<p>Individual members should first submit pull requests to the team leader’s fork. After mering all the pull requests from other team members, the team leader should make a single pull request to <a href="https://github.com/ucdd2-sp15/ucdd-jaded">ucdd2-sp15/ucdd-jaded</a>. In the pull request message, the team leader should list the names of the team members and also write down the points the team has earned.</p>
+<p>Use the following Markdown template in the pull request message.</p>
+<pre><code># Team members
+Who?
+Who?
+Who?
+Who?
+
+# Score
+?/50
+
+# Meeting Location
+where?
+
+# Meeting Time
+when? how long?
+
+# Bug
+why? How to fix?
+</code></pre><h2 id="absence">Absence</h2>
+<p>People who fail to show up and participate in a team learning session will not earn any point from this part.</p>
+<h1 id="individual-learning-50-points-">Individual Learning (50 points)</h1>
+<p>More functions to reverse-engineer!!</p>
+<h2 id="github-repository">Github Repository</h2>
+<p><code>ucdd-lodash</code></p>
+<p><a href="https://github.com/ucdd2-sp15/ucdd-lodash" class="btn btn-info">https://github.com/ucdd2-sp15/ucdd-lodash</a></p>
+<h2 id="development">Development</h2>
+<p>You should have created your own fork already from last week’s homework. In the local copy of your fork, pull the new part2 files by running</p>
+<pre><code>$ git pull
+</code></pre><p>You should see these two files added:</p>
+<ul>
+<li><code>lib/ucdd-lodash.part2.js</code>: five more library functions to implement</li>
+<li><code>test/ucdd-lodash.part2.test.js</code>: code to test these functions</li>
+</ul>
+<h2 id="milestones">Milestones</h2>
+<ol>
+<li>Have implemented <code>range</code> (10 points)</li>
+<li>Have implemented <code>pick</code> (10 points)</li>
+<li>Have implemented <code>some</code> (10 points)</li>
+<li>Have implemented <code>every</code> (10 points)</li>
+<li>Have implemented <code>find</code> (10 points)</li>
+</ol>
+<h2 id="due">Due</h2>
+<p>11:59pm, Sunday</p>
+<h2 id="submission">Submission</h2>
+<p>You do not need to make a pull request from your fork. You just need to make sure you commit your code and push this commit to your own Github fork. We will assume your most recent commit prior to the deadline is your submission.</p>
+<p>Github provides a nice visualization of all the forks and commits as a <em>Network Graph</em>. For example, last week’s submissions for <code>html-gen</code> are already visible in this repo’s network graph, shown below.</p>
+<p><img src="/website/challenges/2/forks.png" alt="forks"></p>
+<p>You can see Ryan reported to have earned 50/50 points! You can also see a good majority of students had their commits at least a couple days before the deadline, a very promising sign!</p>
+<p>For this week, the network graph can be accessed <a href="https://github.com/ucdd2-sp15/ucdd-lodash/network">here</a>. Or you can click on the number next to the fork button, like below.</p>
+<p><img src="/website/challenges/2/forksButton.png" alt="forks button"></p>
+<p>If you are able to see your activities in the graph, you are all set!</p>
+<h1 id="grading">Grading</h1>
+<p>We will use a honor system in which you will self-report the points you believe you have earned. For the team learning part, the team leader reports the points earned in the pull request message. For the individual learning part, you report the points you’ve earned in the last commit message prior to the deadline.</p>
+<p>Each week, the grader for this class will take a random sample of the submissions to check for consistency to ensure fairness and promote honesty.</p>
 </div>
               </div>
             </div>
