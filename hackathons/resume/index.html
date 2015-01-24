@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/website/">
+    <meta charset="utf-8">
+    <title>UCDD II | Spring 2015</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The main CSS file-->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- CSS file for your custom modifications-->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="72">
+    <!-- ///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
+    <!-- /////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="header">
+      <!-- Static navbar-->
+      <div role="navigation" class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
+            <!-- Logo goes here - replace the image with yours--><a href="index.html" class="navbar-brand">UCDD II - Spring 2015</a>
+          </div>            
+          <div class="navbar-collapse collapse nav-right">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- Menu items go here-->
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 main-column">
+            <div class="blog-item">
+              <div class="blog-main"><a href="#" class="blog-title">HACKATHON: Resume</a>
+                <p class="lead">Build a resume page</p>
+                <div><p>A skeleton site is at:</p>
+<p><a href="http://ucdd2-sp15.github.io/resume/">http://ucdd2-sp15.github.io/resume/</a></p>
+<p>This site currently has some placeholder contents:</p>
+<p><img src="/website/hackathons/resume/skeleton.png" alt="skeleton"></p>
+<p>The Github repository for this site is at</p>
+<p><a href="https://github.com/ucdd2-sp15/resume" class="btn btn-info">https://github.com/ucdd2-sp15/resume</a></p>
+<h1 id="objectives">Objectives</h1>
+<p>Populate the site with real contents for the following sections:</p>
+<ul>
+<li>Personal Information </li>
+<li>Work Experiences</li>
+<li>Education</li>
+<li>Portfolio</li>
+<li>Skills</li>
+<li>Honors</li>
+<li>References</li>
+</ul>
+<h1 id="specifications">Specifications</h1>
+<ul>
+<li><strong>Whose resume is this?</strong> The resume should be about a fictional person whose background is a synthesis of real data from all members of the team. For example, this fictional person may have A’s work experiences, B’s porfolio, C’s skills, and D’s education.</li>
+<li><strong>How real?</strong> Individually, all items on this resume should be real. Of course, taken together, the resume is fictional.</li>
+<li><strong> What is the name of the person?</strong> A combination of team member’s middle names.</li>
+<li><strong>Who works on what?</strong> The work must be fairly distributed among the team members. Each team member must be responsible for at least one section. Since there are more sections than team members, some team members may need to work on more sections.</li>
+<li><strong>Should images be used?</strong> Work Experiences and Portfolio sections must include relevant images. For other sections, use of images is encouraged but optional.</li>
+<li><strong>Should the site go live?</strong> Yes. The team leader should publish the site to <a href="https://pages.github.com/">gh-pages</a> under his or her own account.</li>
+<li><strong>But, I don’t want to host a madeup person’s resume</strong>? This is only temporary. In this week’s homework, everyone will develop his or her own resume with all the sections filled with his or her real personal contents.</li>
+</ul>
+<h1 id="time">Time</h1>
+<p>2 hours</p>
+<h1 id="team">Team</h1>
+<p>Work together with the same team from the previous week.</p>
+<h1 id="hints">Hints</h1>
+<ul>
+<li>Read <code>contents/hobby.json</code> and <code>templates/hobby.jade</code> to learn how the hobby section is made.</li>
+<li>Read <code>contents/travel.json</code> and <code>templates/travel.jade</code> to learn how the hobby section is made</li>
+<li>Read <code>templates/index.jade</code> to see how different sections are brought together.</li>
+</ul>
+<h1 id="procedure">Procedure</h1>
+<p>Use the same two-level fork-pull procedure you’ve done a few times so far.</p>
+<ol>
+<li><strong>Fork.</strong> The team leader creates a fork (i.e., team’s fork).</li>
+<li><strong>Fork.</strong> Each team member creates a fork of this team’s fork.</li>
+<li><strong>Work.</strong> The team distributes sections fairly to individual members to work on.</li>
+<li><strong>Pull.</strong> Once done, each team member makes a pull request to the leader.</li>
+<li><strong>Pull.</strong> The leader merges all the pull requests and then make a single pull request to the course’s repository (i.e., <a href="https://github.com/ucdd2-sp15/resume">https://github.com/ucdd2-sp15/resume</a>).</li>
+</ol>
+<h1 id="milestones">Milestones</h1>
+<ul>
+<li>Personal Information (5 points)</li>
+<li>Work Experiences (10 points)</li>
+<li>Portfolio (10 points)</li>
+<li>Education (5 points)</li>
+<li>Skills (5 points)</li>
+<li>Honors (5 points)</li>
+<li>References (5 points)</li>
+<li>Published to gh-pages (5 points)</li>
+</ul>
+<h1 id="submission-template">Submission Template</h1>
+<p>Use the following template in the pull request message:</p>
+<pre><code class="lang-markdown">
+<span class="header"># Team members</span>
+Who?
+Who?
+Who?
+Who?
+
+<span class="header"># Score</span>
+?/50
+
+<span class="header"># URL</span>
+What URL to access this site?
+</code></pre>
+<h1 id="useful-resources">Useful Resources</h1>
+<p><a href="http://naltatis.github.io/jade-syntax-docs/">http://naltatis.github.io/jade-syntax-docs/</a></p>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// FOOTER SECTION ////////////////////////////////////////-->
+    <section id="footer">
+      <div class="bottom-menu-inverse">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p><a href="https://github.com/ucdd2-sp15/announcements/issues" target="_blank">Announcements</a>|<a href="syllabus/policy.html" target="_blank">Policy </a>|              <a href="syllabus/grading.html" target="_blank">Grading</a></p>
+            </div>
+            <div class="col-md-6 social"></div>
+          </div>
+        </div>
+        <!-- /row-->
+      </div>
+      <!-- /container-->
+    </section>
+    <!-- //////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
+    <!-- Feel free to remove the scripts you are not going to use-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script src="assets/twitter/jquery.tweet.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- //////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
+  </body>
+</html>
