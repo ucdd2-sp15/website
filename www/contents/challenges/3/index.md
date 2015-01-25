@@ -1,5 +1,5 @@
 ---
-title: Week
+title: Week 3
 lead: Getting More Jaded
 template: challenge.jade
 ---

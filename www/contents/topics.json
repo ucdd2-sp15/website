@@ -7,12 +7,12 @@
     "name": "WintersmithJS",
     "description": "Flexible, minimalistic, static site generator",
     "logo": "wintersmith.png",
-    "weeks" : [0,2] 
+    "weeks" : [0,2,3] 
 }, {
     "name": "Jade",
     "description": "Robust, elegant, feature rich template engine for nodejs",
     "logo": "jade.png",
-    "weeks" : [2]
+    "weeks" : [2,3]
 }, {
     "name": "JQuery",
     "description": "The Write Less, Do More, JavaScript Library",
