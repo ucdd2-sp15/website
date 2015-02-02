@@ -37,9 +37,76 @@
         <div class="row">
           <div class="col-md-8 main-column">
             <div class="blog-item">
-              <div class="blog-main"><a href="#" class="blog-title">Week</a>
-                <p class="lead">TBA</p>
-                <div><p>TBA</p>
+              <div class="blog-main"><a href="#" class="blog-title">Week 4</a>
+                <p class="lead">Yelp Expressly</p>
+                <div><p>Your learning challenge this week will be about <a href="http://expressjs.com/">Express</a>, which calls itself a fast, unopinionated, minimalist web framework for Node.js. For the teaming learning component, your objective is to port the set of Jade templates you’ve developed for the <a href="/website/hackathons/yelp">Yelp hackathon</a> to the Express framework, so that detail pages about individual items can be served dynamically. For the individual learning component, your objective is to develop a <em>search</em> plugin for this site.</p>
+<h1 id="team-learning-50-points-">Team Learning (50 points)</h1>
+<h2 id="objectives">Objectives</h2>
+<ol>
+<li>Implement the TODO’s in the template files in <code>views/</code> for linking to individual restaurants, doctors, tips, and users.</li>
+<li>Port the templates you made from the hackathon from Wintersmith to Express.</li>
+<li>Implement the TODO’s in <code>app.js</code> to return a specific restaurant, doctor, tip, or user by its Ids.</li>
+</ol>
+<h2 id="github-repository">Github Repository</h2>
+<p><a href="https://github.com/ucdd2-sp15/yelp-express" class="btn btn-info">https://github.com/ucdd2-sp15/yelp-express</a></p>
+<h2 id="milestones">Milestones</h2>
+<ol>
+<li>Have gotten the skeleton code running on every team member’s machine (10 points)</li>
+<li>Have completed the <code>restaurants</code> listing and detail pages (10 points)</li>
+<li>Have completed the <code>doctors</code> listing and detail pages (10 points)</li>
+<li>Have completed the <code>tips</code> listing and detail pages (10 points)</li>
+<li>Have completed the <code>users</code> listing and detail pages (10 points)</li>
+</ol>
+<p><span class='btn btn-danger'>BONUS</span>
+Get the site hosted on some server that can be viewed publicly. (10 points)</p>
+<h2 id="due">Due</h2>
+<p>11:59pm, Friday</p>
+<h2 id="time-and-location">Time and Location</h2>
+<p>Each team decides on a time and location to meet before the submission deadline.</p>
+<h2 id="submission">Submission</h2>
+<p>Same deal. The team leader makes a fork each team member will in turn create another fork from. THe team leader then accepts pull requests from team members, merge them, and make a single, combined pull request to the original repository (i.e., <a href="https://github.com/ucdd2-sp15/yelp-express">ucdd2-sp15/yelp-express</a>).</p>
+<p>Use the following Markdown template in the pull request message.</p>
+<pre><code># Team members
+Who?
+Who?
+Who?
+Who?
+
+# Score
+?/50
+
+# Bonus
+?/10
+which url?
+
+# Meeting Location
+where?
+
+# Meeting Time
+when? how long?
+</code></pre><h1 id="individual-learning-50-points-">Individual Learning (50 points)</h1>
+<p>Develop a richer set of search functions that are just not possible with Wintersmith. The search functions are defined in <code>search.js</code> as a plugin. The skeleton code contains a bunch of hardcoded fake results. Your learning objetive is to make them real by implementing the neccessary search logic using Javascript. You are encouraged to use Lodash functions such as <code>_.find</code> or <code>_.filter</code>.</p>
+<p><em>Why not using a database?</em> Please be patient. We will do just that next.</p>
+<h2 id="github-repository">Github Repository</h2>
+<p>Your own fork of <code>yelp-express</code></p>
+<p><a href="https://github.com/ucdd2-sp15/yelp-express" class="btn btn-info">https://github.com/ucdd2-sp15/yelp-express</a></p>
+<h2 id="test-cases">Test Cases</h2>
+<p>There are a total of 6 functions in <code>search.js</code> you need to implement. On the <code>Search</code> tab, you will see a list of 20 test queries. You earn 2.5 points for each one you got working. </p>
+<p><img src="/website/challenges/4/search.png" alt="search"></p>
+<p><em>How can I check these test cases automatically?</em>  For this week, you need to manually look at the results to see if there are correct. You may soon feel it’s a bit tedious. Next week, you will learn about using <a href="http://mochajs.org/">Mocha</a> for test automation.</p>
+<h2 id="milestones">Milestones</h2>
+<ul>
+<li>Search by Routes (25 points)</li>
+<li>Search by Query Strings (25 points)</li>
+</ul>
+<h2 id="due">Due</h2>
+<p>11:59pm, Sunday</p>
+<h2 id="submission">Submission</h2>
+<ul>
+<li>You do not need to make a pull request from your fork. You just need to make sure you commit your code and push this commit to your own Github fork. We will assume your most recent commit prior to the deadline is your submission. </li>
+<li>Remember to include the points you’ve earned in the commit message.</li>
+<li>You do not need to get the site live on a public server.</li>
+</ul>
 </div>
               </div>
             </div>
