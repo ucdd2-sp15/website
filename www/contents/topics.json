@@ -14,6 +14,11 @@
     "logo": "jade.png",
     "weeks" : [2,3]
 }, {
+    "name": "Express",
+    "description": "Fast, unopinionated, minimalist web framework for Node.js",
+    "logo": "express.png",
+    "weeks" : [4]    
+}, {
     "name": "JQuery",
     "description": "The Write Less, Do More, JavaScript Library",
     "logo": "jquery.png",
@@ -27,11 +32,6 @@
     "name": "Gulpjs",
     "description": "The streamming build system",
     "logo": "gulp.png",
-    "weeks" : []
-}, {
-    "name": "Phantomjs",
-    "description": "Headless website testing",
-    "logo": "phantom.png",
     "weeks" : []
 }, {
     "name": "Mocha",
