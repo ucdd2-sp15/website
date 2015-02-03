@@ -18,6 +18,15 @@ Your learning challenge this week will be about [Express](http://expressjs.com/)
 
 <a href="https://github.com/ucdd2-sp15/yelp-express" class="btn btn-info">https://github.com/ucdd2-sp15/yelp-express</a>
 
+## Links
+
+Once you got the server running at `localhost:3000`, you can access the following pages:
+
+* [List of restaurants](http://localhost:3000/list/restaurants)
+* [List of users](http://localhost:3000/list/users)
+* [List of tips](http://localhost:3000/list/tips)
+* [List of doctors](http://localhost:3000/list/doctors)
+
 ## Milestones
 
 1. Have gotten the skeleton code running on every team member's machine (10 points)
