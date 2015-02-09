@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/website/">
+    <meta charset="utf-8">
+    <title>UCDD II | Spring 2015</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The main CSS file-->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- CSS file for your custom modifications-->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="72">
+    <!-- ///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
+    <!-- /////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="header">
+      <!-- Static navbar-->
+      <div role="navigation" class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
+            <!-- Logo goes here - replace the image with yours--><a href="index.html" class="navbar-brand">UCDD II - Spring 2015</a>
+          </div>            
+          <div class="navbar-collapse collapse nav-right">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- Menu items go here-->
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 main-column">
+            <div class="blog-item">
+              <div class="blog-main"><a href="#" class="blog-title">HACKATHON: NatureNet</a>
+                <p class="lead">NatureNet</p>
+                <div><p><a href="http://www.nature-net.org/">NatureNet</a> is a research project <a href="http://nsf.gov/awardsearch/showAward?AWD_ID=1221513">funded</a> by the <a href="http://nsf.gov/index.jsp">National Science Foundation</a>. It needs a better website, preferably powered by ExpressJS.</p>
+<p>A skeleton site is at: <a href="https://frozen-tor-4197.herokuapp.com/note/list">https://frozen-tor-4197.herokuapp.com/</a>. There are many open <a href="https://github.com/ucdd2-sp15/nn-express/issues">issues</a>. Some are <a href="https://github.com/ucdd2-sp15/nn-express/labels/bug">bugs</a> and some are <a href="https://github.com/ucdd2-sp15/nn-express/labels/enhancement">enhancements</a>. 10 of them are associated with the <a href="https://github.com/ucdd2-sp15/nn-express/milestones">hackathon</a> milestone. </p>
+<p>How many can your team address in 150 minutes?</p>
+<h1 id="github">Github</h1>
+<p>The Github repository for this site is at</p>
+<p><a href="https://github.com/ucdd2-sp15/nn-express" class="btn btn-info">https://github.com/ucdd2-sp15/nn-express</a></p>
+<h1 id="data">Data</h1>
+<p>This site’s data are stored as three separate json files in <code>data</code>. The three files are <code>accounts.json</code>, <code>contexts.json</code>, and <code>notes.json</code>.</p>
+<p><a href="https://github.com/ucdd2-sp15/nn-express/tree/master/data">Click here to see these JSON files on Github</a></p>
+<h1 id="objective">Objective</h1>
+<p>Solve all the issues marked for the milestone named <a href="https://github.com/ucdd2-sp15/nn-express/milestones">hackathon</a>.</p>
+<h1 id="q-a">Q/A</h1>
+<h2 id="naturenet">NatureNet</h2>
+<ul>
+<li><strong>What is NatureNet</strong>? NatureNet is a citizen science project with a crowd-sourced design. The goal to increase motivation for participation and to identify creative ways in which people can contribute to sustainable bio-diversity at the Aspen Center for Environmental Studies (ACES).</li>
+<li><strong>Who are involved in this project?</strong> Three universities: University of North Carolina Charlotte (UNCC), University of Maryland Collge Park (UMD), and University of Colorado Boulder (CU). Tom Yeh, the professor teaching this course, is the Principal Investigator (PI) of CU’s team. Jackie Cameron is a PhD student on the project. She is around today and can answer your question about the project.</li>
+<li><strong>Is the site going to be used at one point?</strong> Quite possibly. Rather than working on another fake site, we thought it would be more fun and meaningful to hack on a site for something real.</li>
+</ul>
+<h2 id="logistics">Logistics</h2>
+<ul>
+<li><strong>Who works on what?</strong> The work must be fairly distributed among the team members. The site’s functionality is broken down into small, individual script files in <a href="https://github.com/ucdd2-sp15/nn-express/tree/master/routes">routes/</a> and template files in <a href="https://github.com/ucdd2-sp15/nn-express/tree/master/views">views/</a> to make it easy for concurrent development and to minimize conflicts.</li>
+<li><p><strong>How can I indicate that I’ve fixed an issue?</strong> Each time you’ve fixed an issue, make a commit. Suppose you’ve just fixed issue 1 and are ready to commit to your branch, write <code>fixed issue #1</code> in the commit message.</p>
+<pre><code>  $ git commit -a -m &#39;fixed #1&#39;
+</code></pre><p>  Github is clever and can automatically resolve #1 to issue 1. The fact that you’ve resolved #1 will be reflected in the commit history, like this:</p>
+<p>  <img src="/website/hackathons/nn/fix.png" alt="fix">    </p>
+</li>
+<li><p><strong>Should the site go live?</strong> Yes. The team leader should publish the site to Heroku following this <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#prepare-the-app">instruction</a>. You only need to do the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up">Set up</a> step and the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app">Deploy the app</a> step. Ask for help if you are stuck.</p>
+</li>
+</ul>
+<h1 id="time">Time</h1>
+<p>2.5 hours</p>
+<h1 id="team">Team</h1>
+<p>Work together with the same team from the previous week.</p>
+<h1 id="procedure">Procedure</h1>
+<p>Use the same two-level fork-pull procedure you’ve done a few times so far.</p>
+<ol>
+<li><strong>Fork.</strong> The team leader creates a fork (i.e., team’s fork).</li>
+<li><strong>Fork.</strong> Each team member creates a fork of this team’s fork.</li>
+<li><strong>Work.</strong> The team distributes works fairly to individual members to do.</li>
+<li><strong>Pull.</strong> Once done, each team member makes a pull request to the leader.</li>
+<li><strong>Pull.</strong> The leader merges all the pull requests and then make a single pull request to the course’s repository (i.e., <a href="https://github.com/ucdd2-sp15/nn-express">https://github.com/ucdd2-sp15/nn-express</a>).</li>
+</ol>
+<h1 id="milestones">Milestones</h1>
+<ul>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/1">Issue 1</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/2">Issue 2</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/3">Issue 3</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/4">Issue 4</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/5">Issue 5</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/6">Issue 6</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/7">Issue 7</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/8">Issue 8</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/9">Issue 9</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/nn-express/issues/10">Issue 10</a> (5 points)</li>
+</ul>
+<h1 id="submission-template">Submission Template</h1>
+<p>Use the following template in the pull request message:</p>
+<pre><code class="lang-markdown">
+<span class="header"># Team members</span>
+Who?
+Who?
+Who?
+Who?
+
+<span class="header"># Score</span>
+?/50
+
+<span class="header"># URL</span>
+What Heroku URL to access this site? (e.g., https://frozen-tor-4197.herokuapp.com/)
+</code></pre>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// FOOTER SECTION ////////////////////////////////////////-->
+    <section id="footer">
+      <div class="bottom-menu-inverse">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p><a href="https://github.com/ucdd2-sp15/announcements/issues" target="_blank">Announcements</a>|<a href="syllabus/policy.html" target="_blank">Policy </a>|              <a href="syllabus/grading.html" target="_blank">Grading</a></p>
+            </div>
+            <div class="col-md-6 social"></div>
+          </div>
+        </div>
+        <!-- /row-->
+      </div>
+      <!-- /container-->
+    </section>
+    <!-- //////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
+    <!-- Feel free to remove the scripts you are not going to use-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script src="assets/twitter/jquery.tweet.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- //////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
+  </body>
+</html>
