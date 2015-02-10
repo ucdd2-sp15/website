@@ -102,7 +102,7 @@ Run the new express server entry script `mongo.js` (not `app.js`)
 
     $ node mongo.js
 
-For Yelp Express, `mongo/doctorView.js` and `mongo/doctorList.js` contain code exmples of sendding a query to a remote mongodb server and getting data back.
+For Yelp Express, `mongo/doctorView.js` and `mongo/doctorList.js` contain code exmples of sending a query to a remote mongodb server and getting data back.
 
 For NN Express, there's no new example code given. You need to figure out on your own, following the example of Yelp Express.
 
