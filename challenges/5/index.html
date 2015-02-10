@@ -39,7 +39,7 @@
             <div class="blog-item">
               <div class="blog-main"><a href="#" class="blog-title">Week 5</a>
                 <p class="lead">MongoDB Express</p>
-                <div><p>Your learning challenge this week will be about <a href="https://www.mongodb.org/">mongoDB</a>. For the teaming learning component, your objective is to improve the two Express-based site your team has built, <a href="https://github.com/ucdd2-sp15/nn-express">Yelp Express</a> and (2) <a href="https://github.com/ucdd2-sp15/nn-express">NN Express</a>, by connecting to a mongoDB server to retrieve data, rather than reading in static json files.</p>
+                <div><p>Your learning challenge this week will be about <a href="https://www.mongodb.org/">mongoDB</a>. For the teaming learning component, your objective is to improve the two Express-based site your team has built—<a href="https://github.com/ucdd2-sp15/nn-express">Yelp Express</a> and <a href="https://github.com/ucdd2-sp15/nn-express">NN Express</a>, by connecting them to a mongoDB server to retrieve data, rather than reading data from static json files.</p>
 <p>For the individual learning component, your objective is to build a dynamic site from scratch (almost) using the set of technologies you’ve learned so far: Jade, Express, and MongoDB.</p>
 <h1 id="team-learning-50-points-">Team Learning (50 points)</h1>
 <h2 id="objectives">Objectives</h2>
@@ -49,14 +49,52 @@
 </ol>
 <h2 id="data">Data</h2>
 <p>Yelp and NN data are hosted in the cloud (i.e., <a href="https://mongolab.com/">mongolab</a>) to be available for your site. You do not need to host your own mongodb server.</p>
-<p>Server urls:</p>
+<p>Urls to use in the code to connect to the servers:</p>
 <ul>
 <li><p>Yelp: <code>mongodb://yelp:1234@ds039960.mongolab.com:39960/yelp</code></p>
 </li>
 <li><p>NN: <code>mongodb://nn:1234@ds053828.mongolab.com:53828/nn</code></p>
 </li>
 </ul>
-<h2 id="code">Code</h2>
+<h2 id="learning-resources">Learning Resources</h2>
+<ul>
+<li><a href="http://try.mongodb.org/">try mongodb</a></li>
+<li><a href="http://docs.mongodb.org/v2.2/tutorial/getting-started-with-the-mongo-shell/">Getting Started with the mongo shell</a></li>
+<li><a href="https://www.npmjs.com/package/monk">monk</a></li>
+</ul>
+<h2 id="shell">Shell</h2>
+<p>It is a good idea to practice using the mongo shell to test out queries and see results.</p>
+<p><strong>Yelp</strong></p>
+<p>Start mongo shell and connect to the Yelp dataset</p>
+<pre><code>$ mongo ds039960.mongolab.com:39960/yelp -u yelp -p 1234
+</code></pre><p>Find the first document of the <em>business</em> collection</p>
+<pre><code>PRIMARY&gt; db.business.findOne()
+</code></pre><p>And you will see a document shown like below:</p>
+<pre><code>{
+    &quot;_id&quot; : ObjectId(&quot;544e139631f3775756ac4ab8&quot;),
+    &quot;business_id&quot; : &quot;vcNAWiLM4dR7D2nwwJ7nCA&quot;,
+    &quot;full_address&quot; : &quot;4840 E Indian School Rd\nSte 101\nPhoenix, AZ 85018&quot;,
+    &quot;hours&quot; : {
+        &quot;Tuesday&quot; : {
+            &quot;close&quot; : &quot;17:00&quot;,
+            &quot;open&quot; : &quot;08:00&quot;
+        },
+
+        ....
+</code></pre><p>Queries to get the first document of each collection:</p>
+<pre><code>PRIMARY&gt; db.business.findOne()
+PRIMARY&gt; db.user.findOne()
+PRIMARY&gt; db.tip.findOne()
+PRIMARY&gt; db.checkin.findOne()
+</code></pre><p>You will only need to use <em>db.business</em> and <em>db.user</em> for this challenge.</p>
+<p><strong>NatureNet</strong></p>
+<p>Start mongo shell and connect to the NN dataset</p>
+<pre><code>$ mongo ds053828.mongolab.com:53828/nn -u nn -p 1234
+</code></pre><p>Queries to get the first document of each collection:</p>
+<pre><code>PRIMARY&gt; db.notes.findOne()
+PRIMARY&gt; db.accounts.findOne()
+PRIMARY&gt; db.contexts.findOne()
+</code></pre><h2 id="code">Code</h2>
 <p>New code has been committed to yelp-express. Get the new code</p>
 <pre><code>$ git pull
 </code></pre><p>You will see these added:</p>
@@ -69,13 +107,8 @@
 * mongo/userList.js
 </code></pre><p>Run the new express server entry script <code>mongo.js</code> (not <code>app.js</code>)  </p>
 <pre><code>$ node mongo.js
-</code></pre><p><code>mongo/doctorView.js</code> and <code>mongo/doctorList.js</code> contain code exmples of getting data from mongodb.</p>
+</code></pre><p>For Yelp Express, <code>mongo/doctorView.js</code> and <code>mongo/doctorList.js</code> contain code exmples of sendding a query to a remote mongodb server and getting data back.</p>
 <p>For NN Express, there’s no new example code given. You need to figure out on your own, following the example of Yelp Express.</p>
-<h2 id="learning-resources">Learning Resources</h2>
-<ul>
-<li><a href="http://try.mongodb.org/">try mongodb</a></li>
-<li><a href="https://www.npmjs.com/package/monk">monk</a></li>
-</ul>
 <h2 id="github-repository">Github Repository</h2>
 <p><a href="https://github.com/ucdd2-sp15/yelp-express" class="btn btn-info">https://github.com/ucdd2-sp15/yelp-express</a></p>
 <p><a href="https://github.com/ucdd2-sp15/nn-express" class="btn btn-info">https://github.com/ucdd2-sp15/nn-express</a></p>
@@ -98,7 +131,7 @@
 </ul>
 </li>
 </ol>
-<p>(We skip the <em>list notes</em> page because we don’t want to handle pagination in mongoDB yet)</p>
+<p>(We skip the <em>list notes</em> page because we don’t want to handle pagination in mongodb, at least not yet)</p>
 <h2 id="due">Due</h2>
 <p>11:59pm, Friday</p>
 <h2 id="time-and-location">Time and Location</h2>
@@ -127,34 +160,38 @@ where?
 # Meeting Time
 when? how long?
 </code></pre><h1 id="individual-learning-50-points-">Individual Learning (50 points)</h1>
-<p>Create a site to list and view a dataset. You can choose from these datasets:</p>
-<ul>
-<li>dataset 1 (TBA)</li>
-<li>dataset 2 (TBA)</li>
-<li>dataset 3 (TBA)</li>
-</ul>
+<p>Create a site to list and view Github data about our class. </p>
 <h2 id="github-repository">Github Repository</h2>
 <p><a href="https://github.com/ucdd2-sp15/my-express" class="btn btn-info">https://github.com/ucdd2-sp15/my-express</a></p>
-<h2 id="requirements">Requirements</h2>
+<h2 id="data">Data</h2>
+<p>There are four collections. Choose any TWO of these collections:</p>
 <ul>
-<li>List and view pages for THREE collections (total six templates and routes)</li>
-<li>A search page that lists five interesting queries. Each query is a link one can click on to see the results of a query (similar to the search page of Yelp Express)</li>
+<li>repos (all repos of <a href="https://github.com/ucdd2-sp15">ucdd-sp15</a>)</li>
+<li>events (last 30 events of <a href="https://github.com/ucdd2-sp15">ucdd-sp15</a>)</li>
+<li>pulls (pulls requests of <a href="https://github.com/ucdd2-sp15/nn-express">nn-express</a>)</li>
+<li>issues (issues of <a href="https://github.com/ucdd2-sp15/nn-express">nn-express</a>)</li>
+</ul>
+<p>Static versions of these data are stored in <code>data/</code> for you convenience.</p>
+<p>Server URL: <code>mongodb://github:1234@ds041871.mongolab.com:41871/github</code></p>
+<p>Connect to the shell:</p>
+<pre><code>$ mongo ds041871.mongolab.com:41871/github -u github -p 1234
+</code></pre><p>Queries to try:</p>
+<pre><code>PRIMARY&gt; db.repos.findOne()
+PRIMARY&gt; db.events.findOne()
+PRIMARY&gt; db.pulls.findOne()
+PRIMARY&gt; db.issues.findOne()
+</code></pre><h2 id="requirements">Requirements</h2>
+<ul>
+<li>List and view pages for TWO collections. In total, you will implement four templates and four routes.</li>
+<li>The skeleton code is nearly empty, on purpose, taking off training wheels. You will practice creating your own Express app and adding other necessary files or npm packages from scratch. Use nn-express and yelp-express as examples.</li>
 </ul>
 <h2 id="milestones">Milestones</h2>
 <ul>
-<li>List page (5 points)</li>
-<li>View page (5 points)</li>
-<li>List page (5 points)</li>
-<li>View page (5 points)</li>
-<li>List page (5 points)</li>
-<li>View page (5 points)</li>
-<li>Search page<ul>
-<li>interesting query 1 (5 point)</li>
-<li>interesting query 2 (5 point)</li>
-<li>interesting query 3 (5 point)</li>
-<li>interesting query 4 (5 point)</li>
-</ul>
-</li>
+<li>List page I (10 points)</li>
+<li>View page I (10 points)</li>
+<li>List page II (10 points)</li>
+<li>View page II (10 points)</li>
+<li>Deploy to Heroku (10 points)</li>
 </ul>
 <h2 id="due">Due</h2>
 <p>11:59pm, Sunday</p>
@@ -162,8 +199,12 @@ when? how long?
 <ul>
 <li>Make your own fork of <a href="https://github.com/ucdd2-sp15/my-express">my-express</a></li>
 <li>You do not need to make a pull request from your fork. You just need to make sure you commit your code and push this commit to your own Github fork. We will assume your most recent commit prior to the deadline is your submission. </li>
-<li>Remember to include the points you’ve earned in the commit message.</li>
-<li>You do not need to get the site live on a public server.</li>
+<li>Last week, you were not asked to deploy the app live. This week, you will need to be able to deploy the app to Heroku.</li>
+<li><strong>NEW</strong> : In the commit message, include<ul>
+<li>Points you’ve earned</li>
+<li>Heroku URL to your Express app</li>
+</ul>
+</li>
 </ul>
 </div>
               </div>
