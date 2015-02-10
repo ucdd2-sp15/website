@@ -17,7 +17,12 @@
     "name": "Express",
     "description": "Fast, unopinionated, minimalist web framework for Node.js",
     "logo": "express.png",
-    "weeks" : [4]    
+    "weeks" : [4,5]    
+}, {
+    "name": "MongoDB",
+    "description": "huMONGOus document database",
+    "logo": "mongo.png",
+    "weeks" : [5]    
 }, {
     "name": "JQuery",
     "description": "The Write Less, Do More, JavaScript Library",
@@ -27,11 +32,6 @@
     "name": "Angularjs",
     "description": "Superheroic JavaScript MVW framework",
     "logo": "angular.png",
-    "weeks" : []
-}, {
-    "name": "Gulpjs",
-    "description": "The streamming build system",
-    "logo": "gulp.png",
     "weeks" : []
 }, {
     "name": "Mocha",
