@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/website/">
+    <meta charset="utf-8">
+    <title>UCDD II | Spring 2015</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The main CSS file-->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- CSS file for your custom modifications-->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar-collapse" data-offset="72">
+    <!-- ///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
+    <!-- /////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="header">
+      <!-- Static navbar-->
+      <div role="navigation" class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
+            <!-- Logo goes here - replace the image with yours--><a href="index.html" class="navbar-brand">UCDD II - Spring 2015</a>
+          </div>            
+          <div class="navbar-collapse collapse nav-right">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- Menu items go here-->
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////-->
+    <section id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 main-column">
+            <div class="blog-item">
+              <div class="blog-main"><a href="#" class="blog-title">HACKATHON: FCQ</a>
+                <p class="lead">FCQ</p>
+                <div><p><a href="http://www.colorado.edu/fcq/">FCQ</a> really needs a better website. Like the hackathon last week, a skeleton site has been made and is hosted at: <a href="https://murmuring-stream-1490.herokuapp.com/">https://murmuring-stream-1490.herokuapp.com/</a>. Ten <a href="https://github.com/ucdd2-sp15/fcq-express/issues">issues</a> have been created for improving this skeleton site. How many can your team address in 150 minutes?</p>
+<h1 id="github">Github</h1>
+<p>The Github repository for this site is at</p>
+<p><a href="https://github.com/ucdd2-sp15/fcq-express" class="btn btn-info">https://github.com/ucdd2-sp15/fcq-express</a></p>
+<h1 id="data">Data</h1>
+<p>This site’s data on a mongodb server as three separate collections: <code>courses</code>, <code>instructors</code>, and <code>departments</code>.</p>
+<p>The URL to connect to the server is:</p>
+<p><code>mongodb://ucdd:hackathon@ds043971.mongolab.com:43971/fcq</code></p>
+<p>Use the mongo shell to explore the data</p>
+<pre><code>$ mongo ds043971.mongolab.com:43971/fcq -u ucdd -p hackathon
+</code></pre><p>For each collection, find a document and examine what fields are available</p>
+<pre><code>PRIMARY&gt; db.courses.findOne()
+PRIMARY&gt; db.instructors.findOne()
+PRIMARY&gt; db.departments.findOne()
+</code></pre><p>Try some queries</p>
+<pre><code>PRIMARY&gt; db.courses.find({&#39;Subject&#39;:&#39;CSCI&#39;}).limit(3).pretty()
+
+PRIMARY&gt; db.courses.find({&#39;insname1&#39;:&#39;GRUNWALD, DIRK C&#39;}).pretty()
+
+PRIMARY&gt; db.instructors.find({&#39;name&#39;:&#39;GRUNWALD, DIRK C&#39;}).pretty()
+
+PRIMARY&gt; db.departments.find({department:&#39;CSCI&#39;}).pretty()    
+
+PRIMARY&gt; db.departments.find({department:&#39;CSCI&#39;}).pretty()
+</code></pre><h1 id="objective">Objective</h1>
+<p>Solve all the issues marked for the <a href="https://github.com/ucdd2-sp15/fcq-express/milestones">hackathon</a> milestone.</p>
+<h1 id="q-a">Q/A</h1>
+<ul>
+<li><strong>Is the site going to be used at one point?</strong> Quite possibly. We may continue to build this site as the semester progresses.Some campus partners have expressed interests in using this site.</li>
+</ul>
+<h2 id="logistics">Logistics</h2>
+<ul>
+<li><strong>Who works on what?</strong> The work must be fairly distributed among the team members. The site’s functionality is broken down into small, individual script files in <a href="https://github.com/ucdd2-sp15/fcq-express/tree/master/routes">routes/</a> and template files in <a href="https://github.com/ucdd2-sp15/fcq-express/tree/master/views">views/</a> and its subdirectories, to make it easy for concurrent development and to minimize conflicts.</li>
+<li><p><strong>How can I indicate that I’ve fixed an issue?</strong> Each time you’ve fixed an issue, make a commit. Suppose you’ve just fixed issue 1 and are ready to commit to your branch, write <code>fixed issue #1</code> in the commit message.</p>
+<pre><code>  $ git commit -a -m &#39;fixed #1&#39;    
+</code></pre></li>
+<li><p><strong>Should the site go live?</strong> Yes. You’ver practiced a couple times so far. It should be quite smooth. The team leader should publish the site to Heroku following this <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#prepare-the-app">instruction</a>. You only need to do the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up">Set up</a> step and the <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app">Deploy the app</a> step. Ask for help if you are stuck. </p>
+</li>
+</ul>
+<h1 id="time">Time</h1>
+<p>2.5 hours</p>
+<h1 id="team">Team</h1>
+<p>Work together with the same team from the previous week.</p>
+<h1 id="procedure">Procedure</h1>
+<p>Use the same two-level fork-pull procedure you’ve done a few times so far.</p>
+<ol>
+<li><strong>Fork.</strong> The team leader creates a fork (i.e., team’s fork).</li>
+<li><strong>Fork.</strong> Each team member creates a fork of this team’s fork.</li>
+<li><strong>Work.</strong> The team distributes works fairly to individual members to do.</li>
+<li><strong>Pull.</strong> Once done, each team member makes a pull request to the leader.</li>
+<li><strong>Pull.</strong> The leader merges all the pull requests and then make a single pull request to the course’s repository (i.e., <a href="https://github.com/ucdd2-sp15/nn-express">https://github.com/ucdd2-sp15/fcq-express</a>).</li>
+</ol>
+<h1 id="milestones">Milestones</h1>
+<ul>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/1">Issue 1</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/2">Issue 2</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/3">Issue 3</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/4">Issue 4</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/5">Issue 5</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/6">Issue 6</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/7">Issue 7</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/8">Issue 8</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/9">Issue 9</a> (5 points)</li>
+<li><a href="https://github.com/ucdd2-sp15/fcq-express/issues/10">Issue 10</a> (5 points)</li>
+</ul>
+<h1 id="submission-template">Submission Template</h1>
+<p>Use the following template in the pull request message:</p>
+<pre><code class="lang-markdown">
+<span class="header"># Team members</span>
+Who?
+Who?
+Who?
+Who?
+
+<span class="header"># Score</span>
+?/50
+
+<span class="header"># URL</span>
+What Heroku URL to access this site? (e.g., https://frozen-tor-4197.herokuapp.com/)
+</code></pre>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////////////////////////////// FOOTER SECTION ////////////////////////////////////////-->
+    <section id="footer">
+      <div class="bottom-menu-inverse">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p><a href="https://github.com/ucdd2-sp15/announcements/issues" target="_blank">Announcements</a>|<a href="syllabus/policy.html" target="_blank">Policy </a>|              <a href="syllabus/grading.html" target="_blank">Grading</a></p>
+            </div>
+            <div class="col-md-6 social"></div>
+          </div>
+        </div>
+        <!-- /row-->
+      </div>
+      <!-- /container-->
+    </section>
+    <!-- //////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
+    <!-- Feel free to remove the scripts you are not going to use-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script src="assets/twitter/jquery.tweet.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- //////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
+  </body>
+</html>
