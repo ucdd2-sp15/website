@@ -27,7 +27,7 @@
     "name": "JQuery",
     "description": "The Write Less, Do More, JavaScript Library",
     "logo": "jquery.png",
-    "weeks" : []    
+    "weeks" : [6]
 }, {
     "name": "Angularjs",
     "description": "Superheroic JavaScript MVW framework",
