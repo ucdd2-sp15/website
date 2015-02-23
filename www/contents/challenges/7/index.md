@@ -31,8 +31,6 @@ Each team decides on a time and location to meet before the submission deadline.
 
 ## Milestones
 
-## Milestones
-
 - figure out how [authentication](http://www.yelp.com/developers/documentation/v2/authentication) works (10 points)
 - get the [Search API](http://www.yelp.com/developers/documentation/v2/search_api) to work for the site (20 points)
 - get the [Business API](http://www.yelp.com/developers/documentation/v2/business) to work for the site (20 points)
