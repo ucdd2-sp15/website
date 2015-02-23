@@ -6,7 +6,7 @@ template: challenge.jade
 
 Your learning challenge this week is to do two mini projects using [jquery](https://www.jquery.com/). 
 
-For the team learning component, the mini project is modify the yelp-jquery site your team has worked on in the previous week to use the [Yelp API](http://www.yelp.com/developers/documentation).
+For the team learning component, the mini project is modify the data backend of the yelp-jquery site your team has worked on in the previous week. Rather than pulling in static JSON data, your team should now use the actual [Yelp API](http://www.yelp.com/developers/documentation).
 
 For the individual learning component, the mini project is to build a new site. Take any public API and build a site for interacting with the API, simialr to the one you've built for the sunlight hackathon. But you need to work on this site individually. This is to make sure you have indeed obtained the skill to independently build something awesome. 
 
