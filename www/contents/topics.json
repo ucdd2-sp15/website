@@ -29,10 +29,10 @@
     "logo": "jquery.png",
     "weeks" : [6, 7]
 }, {
-    "name": "Angularjs",
-    "description": "Superheroic JavaScript MVW framework",
-    "logo": "angular.png",
-    "weeks" : []
+    "name": "ReactJS",
+    "description": "Declarative, Efficient, and Flexible Library for Building UIs",
+    "logo": "react.png",
+    "weeks" : [9]
 }, {
     "name": "Mocha",
     "description": "Fun, simple, flexible JS test framework",

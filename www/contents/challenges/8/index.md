@@ -1,8 +1,8 @@
 ---
 title: Week
-lead: TBA
+lead: JQuery + API
 template: challenge.jade
 ---
 
-TBA
+Same as Week 7.
 
